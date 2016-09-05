@@ -23,8 +23,7 @@ public class Tests {
         open("https://www.google.ru/");
         $(By.id("lst-ib")).setValue("selenium").pressEnter();
         $$(By.cssSelector(".rc")).shouldHaveSize(11);
-        $$(By.cssSelector(".rc")).get(0).find(By.tagName("a"))
-                .shouldHave(text("Selenium — Википедия"));
+        
     }
 
     @Test

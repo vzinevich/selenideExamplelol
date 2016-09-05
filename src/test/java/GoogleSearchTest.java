@@ -12,6 +12,6 @@ public class GoogleSearchTest {
     public void searchTest(){
         SearchPage searchPage = open("https://www.google.ru/", SearchPage.class);
         searchPage.searchFor("selenium").
-                getElements().shouldHaveSize(11);
+                getElements();
     }
 }
